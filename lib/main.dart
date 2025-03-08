@@ -5,10 +5,11 @@ import 'package:test_app/settings/thememanager.dart';
 import '/tabs/first.dart';
 import '/tabs/second.dart';
 import '/tabs/third.dart';
+import 'Get_Lessons_test.dart';
 
-void main() {
-  // List Data = GetSemestr();
+void main() async {
   runApp(App());
+  await getData();
 }
 
 ThemeManager _themeManager = ThemeManager();
