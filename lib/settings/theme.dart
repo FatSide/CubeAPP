@@ -21,6 +21,10 @@ ThemeData lightTheme = ThemeData(
   iconTheme: IconThemeData(
     color: verylightblue,
   ),
+
+  cardTheme: CardTheme(
+    color: Colors.white,
+  ),
 );
 
 ThemeData darkTheme = ThemeData(
@@ -44,6 +48,9 @@ ThemeData darkTheme = ThemeData(
 
   appBarTheme: AppBarTheme(
     foregroundColor: lightgrey,
+  ),
+  cardTheme: CardTheme(
+    color: Colors.black26,
   ),
 
 );

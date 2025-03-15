@@ -6,6 +6,7 @@ import '/tabs/first.dart';
 import '/tabs/second.dart';
 import '/tabs/third.dart';
 import 'Get_Lessons_test.dart';
+import 'package:test_app/test_tabs/first.dart';
 
 void main() async {
   runApp(App());
@@ -86,7 +87,7 @@ class HomeState extends State<Home> with SingleTickerProviderStateMixin {
         title: Text("КУБ.Расписание", style: Theme.of(context).textTheme.headline6,),
       ),
       body: TabBarView(
-        children: <Widget>[FirstTab(), SecondTab(), ThirdTab()],
+        children: <Widget>[FirstTab_test(), SecondTab(), ThirdTab()],
         controller: controller,
       ),
       bottomNavigationBar: Material(
